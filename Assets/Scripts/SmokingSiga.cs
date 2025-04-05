@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler ,  IEndDragHandler
 {
@@ -9,13 +11,14 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     [SerializeField] private GameObject Chapman;
     [SerializeField] private CapsuleCollider2D SigaCollider;
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float SigaScale;
-    private float pixelsPerUnit;
+
+
     private Camera mainCamera;
     private Vector3 offset;
 
     [SerializeField] private bool IsSiga;
     [SerializeField] private bool IsMouthTrigger;
+    [SerializeField] private bool IsFireTrigger; 
     [SerializeField] private SmokingSiga MainSiga;
     [SerializeField] private LayerMask collisionMask;
     private bool SigaInDaMouth;
@@ -23,6 +26,8 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     [SerializeField] private float collisionOffset = 0.1f;
 
     [SerializeField] private GameObject Zippka;
+    [SerializeField] private GameObject FireZone;
+    [SerializeField] private GameObject FireLight;
     private bool Placed;
 
     bool picked = false;
@@ -31,10 +36,7 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     {
         if (IsSiga)
         {
-            SigaScale = transform.localScale.x;
-            Debug.Log(SigaScale);
             mainCamera = Camera.main;
-            pixelsPerUnit = mainCamera.orthographicSize * 2 / Screen.height;
         }
 
     }
@@ -45,6 +47,17 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         {
             MainSiga.SigaInDaMouth = true;
             Debug.Log("SigaInDaMouth");
+        }
+        if (IsFireTrigger )
+        {
+
+            // Проверка по тегу (например, "Player")
+            if (collision.CompareTag("Lighter"))
+            {
+                Debug.Log("Fired");
+                FireZone.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
+                FireLight.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -105,6 +118,7 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
         if (SigaInDaMouth)
         {
             Zippka.SetActive(true);
+            FireZone.SetActive(true);
             Placed = true;
         }
         SigaCollider.enabled = true;
