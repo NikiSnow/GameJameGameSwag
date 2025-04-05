@@ -3,6 +3,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int _health = 1;
+    [SerializeField] private Animator _animator;
 
     public void TakeDamage(int damage)
     {
@@ -16,6 +17,14 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        if (_animator != null)
+        {
+            _animator.SetTrigger("Dead");
+            Destroy(gameObject, _animator.GetCurrentAnimatorStateInfo(0).length);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
