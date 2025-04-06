@@ -45,8 +45,12 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     {
         if (IsMouthTrigger)
         {
-            MainSiga.SigaInDaMouth = true;
-            Debug.Log("SigaInDaMouth");
+            if (collision.CompareTag("Siga"))
+            {
+                MainSiga.SigaInDaMouth = true;
+                Debug.Log("SigaInDaMouth");
+            }
+
         }
         if (IsFireTrigger )
         {
@@ -64,8 +68,11 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
     {
         if (IsMouthTrigger)
         {
-            MainSiga.SigaInDaMouth = false;
-            Debug.Log("SigaInDaMouthFALSE");
+            if (collision.CompareTag("Siga"))
+            {
+                MainSiga.SigaInDaMouth = false;
+                Debug.Log("SigaInDaMouthFALSE");
+            }
         }
     }
 
