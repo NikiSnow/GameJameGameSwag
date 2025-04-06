@@ -4,10 +4,12 @@ public class EnemyLogic : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private bool _isRight;
+    [SerializeField] private Animator _animator;
     
     private Rigidbody2D _rigidbody2D;
     private Vector2 _direction;
     private Transform _target;
+    public bool _isPaused;
 
     private void Awake()
     {
@@ -17,10 +19,15 @@ public class EnemyLogic : MonoBehaviour
 
     private void Update()
     {
+        if (_isPaused)
+        {
+            Stay();
+            return;
+        }
+        
         if (_target == null)
         {
-            _rigidbody2D.velocity = Vector2.zero;
-            _direction = Vector2.zero;
+            Stay();
             return;
         }
         
@@ -31,6 +38,9 @@ public class EnemyLogic : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_isPaused)
+            return;
+        
         _rigidbody2D.velocity = _rigidbody2D.gravityScale == 0 ? new Vector2(_speed * _direction.x, _speed * _direction.y) : new Vector2(_speed * _direction.x, _rigidbody2D.velocity.y);
     }
     
@@ -44,7 +54,28 @@ public class EnemyLogic : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Stay();
+            
+            if (_animator != null)
+                _animator.SetTrigger("Attack");
+            
             //other.GetComponent<Player>().Dead();
         }
+    }
+
+    private void Stay()
+    {
+        _rigidbody2D.velocity = Vector2.zero;
+        _direction = Vector2.zero;
+    }
+
+    public void Pause()
+    {
+        _isPaused = true;
+    }
+
+    public void Unpause()
+    {
+        _isPaused = false;
     }
 }
