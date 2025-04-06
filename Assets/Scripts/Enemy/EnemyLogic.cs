@@ -10,10 +10,12 @@ public class EnemyLogic : MonoBehaviour
     private Vector2 _direction;
     private Transform _target;
     public bool _isPaused;
+    public SpriteRenderer _player;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
         _target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
