@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 
 public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler ,  IEndDragHandler
 {
@@ -32,11 +33,13 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
 
     bool picked = false;
 
-    private void Awake()
+    private void OnEnable()
     {
+        //Debug.Log("SigaScreenFromSigaStarted");
         if (IsSiga)
         {
             mainCamera = Camera.main;
+            Debug.Log(mainCamera);
         }
 
     }
@@ -61,6 +64,9 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
                 Debug.Log("Fired");
                 FireZone.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
                 FireLight.SetActive(true);
+                GameObject.FindWithTag("BalancePointer").GetComponent<Pointer>().GoBackAfterSmoking();
+                Light2D globalLight = GameObject.FindWithTag("GlobalLight").GetComponent<Light2D>();
+                globalLight.intensity = 1f;
             }
         }
     }

@@ -28,6 +28,13 @@ public class Lighter : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, I
         if (IsLighter)
         {
             mainCamera = Camera.main;
+
+        }
+        if (IsFlint)
+        {
+
+            globalLight = GameObject.FindWithTag("GlobalLight").GetComponent<Light2D>();
+            Debug.Log(globalLight);
         }
     }
 

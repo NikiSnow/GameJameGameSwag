@@ -8,6 +8,9 @@ TagManager:
   - Cigarretes
   - Lighter
   - Siga
+  - GlobalLight
+  - SigaCumeraPoint
+  - BalancePointer
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class FallRecoverySystem : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class FallRecoverySystem : MonoBehaviour
 
     [Header("UI элементы")]
     [SerializeField] private Image eKeyImage;        // Картинка кнопки E
-    [SerializeField] private Text pressCountText;   // Текст счетчика
-    [SerializeField] private Text timerText;        // Текст таймера
+    [SerializeField] private TMP_Text pressCountText;   // Текст счетчика
+    [SerializeField] private TMP_Text timerText;        // Текст таймера
 
     private bool isFallen;
     private int requiredPresses;
@@ -20,6 +21,9 @@ public class FallRecoverySystem : MonoBehaviour
     private float remainingTime;
     private Coroutine recoveryCoroutine;
 
+    [SerializeField] wlking Player;
+    [SerializeField] GameObject BalanceVisual;
+    [SerializeField] GameObject PuffButton;
     public void TriggerFall()
     {
         if (isFallen) return;
@@ -47,7 +51,7 @@ public class FallRecoverySystem : MonoBehaviour
         {
             currentPresses++;
             UpdateUI();
-            Debug.Log($"Нажато: {currentPresses}/{requiredPresses}");
+            //Debug.Log($"Нажато: {currentPresses}/{requiredPresses}");
 
             if (currentPresses >= requiredPresses)
             {
@@ -75,6 +79,9 @@ public class FallRecoverySystem : MonoBehaviour
     {
         isFallen = false;
         SetUIActive(false);
+        Player.AbleMove=true;
+        PuffButton.SetActive(true);
+        BalanceVisual.SetActive(true);
         Debug.Log("Персонаж поднялся!");
     }
 
