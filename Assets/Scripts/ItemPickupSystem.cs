@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class ItemPickupSystem : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class ItemPickupSystem : MonoBehaviour
 
     [Header("Настройки")]
     [SerializeField] private float pickupDistance = 2f;
-    [SerializeField] private Text pickupPromptText;
-    [SerializeField] private Text notificationText;
+    [SerializeField] private TMP_Text pickupPromptText;
+    [SerializeField] private TMP_Text notificationText;
     [SerializeField] private KeyCode pickupKey = KeyCode.F;
     [SerializeField] private float notificationDuration = 1.5f;
 
@@ -43,10 +44,14 @@ public class ItemPickupSystem : MonoBehaviour
     private GameObject nearestItem;
     private Coroutine notificationCoroutine;
 
+    [SerializeField] Button Puffbut;
+
+
     private void Start()
     {
         FindAllItemsInScene();
         UpdateUI();
+        UpdatePuffButton();
         HideNotification();
     }
 
@@ -106,6 +111,7 @@ public class ItemPickupSystem : MonoBehaviour
                 if (itemType.name == "Сигареты")
                 {
                     ShowNotification("Сига");
+                    UpdatePuffButton();
                 }
                 else if (itemType.name == "Патроны")
                 {
@@ -117,6 +123,13 @@ public class ItemPickupSystem : MonoBehaviour
             }
         }
     }
+    public void StartedPuffing()
+    {
+        ItemType SigaItem = items.Find(item => item.name == "Сигареты");
+        SigaItem.count -= 1;
+        UpdateUI();
+        UpdatePuffButton();
+    }
 
     private void UpdateUI()
     {
@@ -127,6 +140,19 @@ public class ItemPickupSystem : MonoBehaviour
                 item.uiText.text = $"{item.count}";
             }
         }
+    }
+    private void UpdatePuffButton()
+    {
+        ItemType SigaItem = items.Find(item => item.name == "Сигареты");
+        if (SigaItem.count > 0)
+        {
+            Puffbut.interactable = true;
+        }
+        else
+        {
+            Puffbut.interactable = false;
+        }
+
     }
 
     private void ShowNotification(string message)
@@ -158,5 +184,18 @@ public class ItemPickupSystem : MonoBehaviour
         {
             notificationText.gameObject.SetActive(false);
         }
+    }
+
+    public int GetAmmoCount()
+    {
+        ItemType ammoItem = items.Find(item => item.name == "Патроны");
+        return ammoItem?.count ?? 0;
+    }
+    public void DecAmmoCount()
+    {
+        ItemType ammoItem = items.Find(item => item.name == "Патроны");
+        ammoItem.count -= 1;
+        UpdateUI();
+
     }
 }

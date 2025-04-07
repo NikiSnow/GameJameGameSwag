@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField] private int _bullet = 5;
+    
     [SerializeField] private int _damage = 1;
     [SerializeField] private float _range = 100f;
     [SerializeField] private LayerMask _enemyLayer;
     
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private float _lineDuration = 0.1f;
+    [SerializeField] private ItemPickupSystem lootSystem;
 
-    private int _currentBullet;
+    public int _currentBullet;
     private Camera _mainCamera;
 
     private void Awake()
@@ -21,11 +22,13 @@ public class GunController : MonoBehaviour
 
     private void Start()
     {
-        _currentBullet = _bullet;
+        
     }
 
-    private void Update()
+    public void Update()
     {
+        _currentBullet = lootSystem.GetAmmoCount();
+
         if (Input.GetButtonDown("Fire1") && _currentBullet != 0)
         {
             Shoot();
@@ -39,9 +42,9 @@ public class GunController : MonoBehaviour
 
     private void Shoot()
     {
-         _currentBullet--;
-         
-        Vector2 mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        lootSystem.DecAmmoCount();
+
+       Vector2 mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         var shootDirection = (mousePosition - (Vector2)transform.position).normalized;
         var hit = Physics2D.Raycast(transform.position, shootDirection, _range, _enemyLayer);
 

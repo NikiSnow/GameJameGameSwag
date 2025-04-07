@@ -981,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -332.75, y: -189.75}
+  m_AnchoredPosition: {x: 215, y: -145}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493981181
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 2917258810573315110, guid: 8708ae72e0762054fb571479a459503b, type: 3}
-  flashDuration: 1
+  flashDuration: 0.17
   flashImage: {fileID: 0}
   enemySprite: {fileID: 2035247213}
   FlashPref: {fileID: 215751578422149887, guid: 1693d11a4e19f084e8c7b71aa70071cf, type: 3}
