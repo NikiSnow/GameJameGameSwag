@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ligther_lid_0: 2236778126986788840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

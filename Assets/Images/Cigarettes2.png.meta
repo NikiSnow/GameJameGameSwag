@@ -311,7 +311,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cigarettes2_0: -5328549775335101908
+      Cigarettes2_1: 8043350294475551878
+      Cigarettes2_2: 2834151305193419758
+      Cigarettes2_3: -8235943575928899602
+      Cigarettes2_4: 6520656397940957010
+      Cigarettes2_5: 808482508304773626
+      Cigarettes2_6: -4834505177004149578
+      Cigarettes2_7: 4813356506370226067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

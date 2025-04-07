@@ -210,6 +210,7 @@ public class Pointer : MonoBehaviour
         // Плавное перемещение к целевому углу
         if (Mathf.Abs(currentAngle - targetAngle) > 0.1f)
         {
+            Debug.Log("Um Moving");
             currentAngle = Mathf.Lerp(currentAngle, targetAngle, rotationSpeed * Time.deltaTime);
             UpdatePosition();
         }

@@ -11,7 +11,7 @@ public class ItemPickupSystem : MonoBehaviour
     {
         public string name;
         public int count;
-        public Text uiText;
+        public TMP_Text uiText;
         public int pickupAmount;
         public string tag;
     }
@@ -46,6 +46,13 @@ public class ItemPickupSystem : MonoBehaviour
 
     [SerializeField] Button Puffbut;
 
+    [Header("CheckpointInfo")]
+    [SerializeField] public Transform CheckPointPosition;
+    [SerializeField] private int WasAmmo;
+    [SerializeField] private int WasSiga;
+
+    [SerializeField] private List<GameObject> NonCheckedItems = new List<GameObject>();
+    [SerializeField] public List<AdvancedEnemySpawner> NonCheckedEnemyTriggers = new List<AdvancedEnemySpawner>();
 
     private void Start()
     {
@@ -61,6 +68,45 @@ public class ItemPickupSystem : MonoBehaviour
         TryPickupItem();
     }
 
+    public void CheckPointReached(Transform CheckPointPos)
+    {
+        Debug.Log("CheckPoint Reached");
+        CheckPointPosition = CheckPointPos;
+        WasAmmo = items.Find(item => item.name == "Патроны").count;
+        WasSiga = items.Find(item => item.name == "Сигареты").count;
+        UpdateUI();
+        UpdatePuffButton();
+        NonCheckedItems.Clear();
+        NonCheckedEnemyTriggers.Clear();
+    }
+    public bool RespawnOnLastCheckP()
+    {
+        if (CheckPointPosition==null)
+            return false;
+        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject obj in objectsWithTag)
+        {
+            Destroy(obj);
+        }
+        Debug.Log("CheckPoint Respawned");
+        items.Find(item => item.name == "Патроны").count = WasAmmo;
+        items.Find(item => item.name == "Сигареты").count = WasSiga;
+        UpdateUI();
+        UpdatePuffButton();
+        foreach (var item in NonCheckedItems)
+        {
+            item.SetActive(true);
+            sceneItems.Add(item);
+        }
+        NonCheckedItems.Clear();
+        foreach (var trigger in NonCheckedEnemyTriggers)
+        {
+            trigger.GetComponent<AdvancedEnemySpawner>().triggered = false;
+        }
+        NonCheckedEnemyTriggers.Clear();
+
+        return true;
+    }
     private void FindAllItemsInScene()
     {
         sceneItems.Clear();
@@ -119,7 +165,9 @@ public class ItemPickupSystem : MonoBehaviour
                 }
 
                 sceneItems.Remove(nearestItem);
-                Destroy(nearestItem);
+                nearestItem.SetActive(false);
+                NonCheckedItems.Add(nearestItem);
+
             }
         }
     }

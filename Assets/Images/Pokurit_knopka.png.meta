@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pokurit_knopka_0: 715371154309317957
+      Pokurit_knopka_1: 8503969106653683315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

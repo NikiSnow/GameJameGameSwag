@@ -383,7 +383,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cigarette_pokurit_0: 4957645509785484903
+      Cigarette_pokurit_1: 18187907560338570
+      Cigarette_pokurit_10: -6988019682924451852
+      Cigarette_pokurit_2: 81555534761083525
+      Cigarette_pokurit_3: -6890005736261298647
+      Cigarette_pokurit_4: -8424292502362286355
+      Cigarette_pokurit_5: 5341623810717854693
+      Cigarette_pokurit_6: 971502373803150076
+      Cigarette_pokurit_7: -3376173005210439820
+      Cigarette_pokurit_8: 6504634171571771328
+      Cigarette_pokurit_9: 7822008372160287653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

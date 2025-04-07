@@ -75,7 +75,7 @@ public class FallRecoverySystem : MonoBehaviour
         }
     }
 
-    private void StandUp()
+    public void StandUp()
     {
         isFallen = false;
         SetUIActive(false);
@@ -90,6 +90,7 @@ public class FallRecoverySystem : MonoBehaviour
         isFallen = false;
         SetUIActive(false);
         Debug.LogError("»√–Œ  ”Ã≈–!");
+        Player.ShowDeadScreen();
     }
 
     private void UpdateUI()

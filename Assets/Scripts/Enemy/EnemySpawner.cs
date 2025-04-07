@@ -12,7 +12,7 @@ public class AdvancedEnemySpawner : MonoBehaviour
     [SerializeField] private Collider2D spawnTrigger;
 
 
-    private bool triggered = false;
+    public bool triggered = false;
 
     [System.Serializable]
     public class EnemySpawnGroup
@@ -27,6 +27,7 @@ public class AdvancedEnemySpawner : MonoBehaviour
     {
         if (triggered || !other.CompareTag("Player")) return;
 
+        other.GetComponent<ItemPickupSystem>().NonCheckedEnemyTriggers.Add(this);
         triggered = true;
         StartCoroutine(SpawnEnemiesRoutine());
 
