@@ -148,8 +148,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 240
-        height: 1200
+        width: 1200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +167,10 @@ TextureImporter:
       name: Cigarette_pokurit_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1140
-        width: 16
-        height: 12
+        x: 745
+        y: 220
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: Cigarette_pokurit_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1088
-        width: 11
-        height: 26
+        x: 1160
+        y: 88
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: Cigarette_pokurit_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1016
-        width: 8
-        height: 8
+        x: 1195
+        y: 68
+        width: 5
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: Cigarette_pokurit_4
       rect:
         serializedVersion: 2
-        x: 51
-        y: 990
-        width: 6
-        height: 6
+        x: 176
+        y: 49
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,9 +251,9 @@ TextureImporter:
       name: Cigarette_pokurit_5
       rect:
         serializedVersion: 2
-        x: 52
-        y: 954
-        width: 8
+        x: 204
+        y: 51
+        width: 6
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -272,8 +272,8 @@ TextureImporter:
       name: Cigarette_pokurit_6
       rect:
         serializedVersion: 2
-        x: 220
-        y: 447
+        x: 240
+        y: 52
         width: 6
         height: 8
       alignment: 0
@@ -293,8 +293,8 @@ TextureImporter:
       name: Cigarette_pokurit_7
       rect:
         serializedVersion: 2
-        x: 54
-        y: 85
+        x: 1109
+        y: 54
         width: 6
         height: 6
       alignment: 0
@@ -314,10 +314,10 @@ TextureImporter:
       name: Cigarette_pokurit_8
       rect:
         serializedVersion: 2
-        x: 53
-        y: 67
-        width: 7
-        height: 6
+        x: 1127
+        y: 53
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +335,10 @@ TextureImporter:
       name: Cigarette_pokurit_9
       rect:
         serializedVersion: 2
-        x: 88
-        y: 34
-        width: 8
-        height: 6
+        x: 48
+        y: 6
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: Cigarette_pokurit_10
       rect:
         serializedVersion: 2
-        x: 68
+        x: 86
         y: 0
-        width: 6
-        height: 5
+        width: 26
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,18 +383,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Cigarette_pokurit_0: 4957645509785484903
-      Cigarette_pokurit_1: 18187907560338570
-      Cigarette_pokurit_10: -6988019682924451852
-      Cigarette_pokurit_2: 81555534761083525
-      Cigarette_pokurit_3: -6890005736261298647
-      Cigarette_pokurit_4: -8424292502362286355
-      Cigarette_pokurit_5: 5341623810717854693
-      Cigarette_pokurit_6: 971502373803150076
-      Cigarette_pokurit_7: -3376173005210439820
-      Cigarette_pokurit_8: 6504634171571771328
-      Cigarette_pokurit_9: 7822008372160287653
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

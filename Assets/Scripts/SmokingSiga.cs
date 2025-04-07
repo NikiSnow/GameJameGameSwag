@@ -62,7 +62,7 @@ public class SmokingSiga : MonoBehaviour, IPointerClickHandler, IBeginDragHandle
             if (collision.CompareTag("Lighter"))
             {
                 Debug.Log("Fired");
-                FireZone.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
+                //FireZone.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
                 FireLight.SetActive(true);
                 GameObject.FindWithTag("BalancePointer").GetComponent<Pointer>().GoBackAfterSmoking();
                 Light2D globalLight = GameObject.FindWithTag("GlobalLight").GetComponent<Light2D>();

@@ -63,6 +63,7 @@ public class Pointer : MonoBehaviour
         Debug.Log(CumeraWasPoint.x);
         PlayerScr.AbleMove = false;
     }
+
     public void GoBackAfterSmoking()
     {
         Debug.Log(CumeraWasPoint.x);
@@ -159,7 +160,14 @@ public class Pointer : MonoBehaviour
     }
     void Update()
     {
-        if (playerTransform == null) return;
+        if (playerTransform == null)
+        {
+            Debug.Log("SwagTransform==null");
+            return;
+        }
+
+            
+
 
         // Обновляем центр окружности относительно игрока
         centerPosition = playerTransform.position + offsetFromPlayer;
@@ -207,8 +215,9 @@ public class Pointer : MonoBehaviour
             }
         }
 
+        Debug.Log("PREMoving");
         // Плавное перемещение к целевому углу
-        if (Mathf.Abs(currentAngle - targetAngle) > 0.1f)
+        if (Mathf.Abs(currentAngle - targetAngle) > 0.01f)
         {
             Debug.Log("Um Moving");
             currentAngle = Mathf.Lerp(currentAngle, targetAngle, rotationSpeed * Time.deltaTime);
@@ -216,6 +225,7 @@ public class Pointer : MonoBehaviour
         }
         else
         {
+            Debug.Log("Im in the Angle");
             currentAngle = targetAngle;
             isManualControl = false; // Сброс флага ручного управления
         }

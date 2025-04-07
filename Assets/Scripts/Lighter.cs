@@ -19,7 +19,7 @@ public class Lighter : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, I
     private Vector3 offset;
     [SerializeField] private BoxCollider2D LightCollider;
     [SerializeField] private LayerMask collisionMask;
-
+    [SerializeField] private Animator animator;
     private bool IsWorking;
 
 
@@ -44,7 +44,7 @@ public class Lighter : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, I
         if (IsCup)
         {
             //There Gonna Be Animation
-            Destroy(Cup);
+            animator.SetTrigger("chik");
         }
 
         if (IsFlint)
@@ -61,7 +61,7 @@ public class Lighter : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, I
 
                 Debug.Log(Fired);//true
                 Fire.SetActive(true);
-                globalLight.intensity = 0.025f;
+                globalLight.intensity = 0.15f;
             }
             else
             {
