@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class wlking : MonoBehaviour
 {
@@ -24,5 +25,9 @@ public class wlking : MonoBehaviour
 
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+    }
+    public void Dead()
+    {
+        SceneManager.LoadScene("Game");
     }
 }

@@ -150,12 +150,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnGroups:
-  - enemyPrefab: {fileID: 7728270341596710877, guid: 606f745533a10024b8852eff119b0d82, type: 3}
+  - enemyPrefab: {fileID: 3863174683880142678, guid: ffbf9a7fd8116e74b9c68b767cd4febb, type: 3}
     spawnPoints:
     - {fileID: 857338613}
     spawnCount: 2
     delayBetweenSpawns: 1
-  - enemyPrefab: {fileID: 7728270341596710877, guid: 606f745533a10024b8852eff119b0d82, type: 3}
+  - enemyPrefab: {fileID: 3863174683880142678, guid: ffbf9a7fd8116e74b9c68b767cd4febb, type: 3}
     spawnPoints:
     - {fileID: 1497398558}
     spawnCount: 2

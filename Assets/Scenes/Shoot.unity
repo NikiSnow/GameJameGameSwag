@@ -459,7 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d6f4ae37e13a6498fbe0f0519a1a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bullet: 5
   _damage: 1
   _range: 100
   _enemyLayer:
@@ -467,6 +466,8 @@ MonoBehaviour:
     m_Bits: 16
   _lineRenderer: {fileID: 123690887}
   _lineDuration: 0.01
+  lootSystem: {fileID: 842937605}
+  _currentBullet: 25
 --- !u!1 &518562459
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842937604}
   - component: {fileID: 842937603}
+  - component: {fileID: 842937605}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -740,6 +742,35 @@ Transform:
   - {fileID: 518562460}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842937605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842937602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e935c99fa732533469479c3c5b965e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupDistance: 2
+  pickupPromptText: {fileID: 0}
+  notificationText: {fileID: 0}
+  pickupKey: 102
+  notificationDuration: 1
+  items:
+  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B"
+    count: 42
+    uiText: {fileID: 0}
+    pickupAmount: 3
+    tag: Ammo
+  - name: "\u0421\u0438\u0433\u0430\u0440\u0435\u0442\u044B"
+    count: 0
+    uiText: {fileID: 0}
+    pickupAmount: 1
+    tag: Cigarretes
+  Puffbut: {fileID: 0}
 --- !u!1 &1132765029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,33 +1258,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2035247206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7728270341596710877, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-  m_PrefabInstance: {fileID: 6452314305212690745}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2035247207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035247206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 980b95cfa53dba24b854c19a7fdbf81e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathSprite: {fileID: 2917258810573315110, guid: 8708ae72e0762054fb571479a459503b, type: 3}
-  flashDuration: 0.17
-  flashImage: {fileID: 0}
-  enemySprite: {fileID: 2035247213}
-  FlashPref: {fileID: 215751578422149887, guid: 1693d11a4e19f084e8c7b71aa70071cf, type: 3}
---- !u!212 &2035247213 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6832376571457679266, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-  m_PrefabInstance: {fileID: 6452314305212690745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2081527652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,30 +1496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6832376571457679266, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6832376571457679266, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6832376571457679266, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6832376571457679266, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7728270341596710877, guid: 606f745533a10024b8852eff119b0d82, type: 3}
       propertyPath: m_Name
       value: AirEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8203156544996099149, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      propertyPath: deathEffect
-      value: 
-      objectReference: {fileID: 2035247207}
     - target: {fileID: 8631437622119475056, guid: 606f745533a10024b8852eff119b0d82, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.93
@@ -1559,10 +1543,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7728270341596710877, guid: 606f745533a10024b8852eff119b0d82, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2035247207}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 606f745533a10024b8852eff119b0d82, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

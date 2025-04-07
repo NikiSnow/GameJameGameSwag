@@ -1,0 +1,1591 @@
+fileFormatVersion: 2
+guid: 7a9fd6b0f94237c44954ada80b0ecd39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7152131123464143200
+    second: Cigarette_icon_0
+  - first:
+      213: 4098924800912736619
+    second: Cigarette_icon_1
+  - first:
+      213: 8947152195854060985
+    second: Cigarette_icon_2
+  - first:
+      213: -9205932029269914209
+    second: Cigarette_icon_3
+  - first:
+      213: -8427256872810674350
+    second: Cigarette_icon_4
+  - first:
+      213: -5074197119209889588
+    second: Cigarette_icon_5
+  - first:
+      213: 8214561552592288167
+    second: Cigarette_icon_6
+  - first:
+      213: 4844806109220847228
+    second: Cigarette_icon_7
+  - first:
+      213: 8947211902734213415
+    second: Cigarette_icon_8
+  - first:
+      213: 3861350056216323290
+    second: Cigarette_icon_9
+  - first:
+      213: 1485877422424627307
+    second: Cigarette_icon_10
+  - first:
+      213: 2186546668499475402
+    second: Cigarette_icon_11
+  - first:
+      213: -6510767978880025621
+    second: Cigarette_icon_12
+  - first:
+      213: -6323709629833650943
+    second: Cigarette_icon_13
+  - first:
+      213: -888013938237742261
+    second: Cigarette_icon_14
+  - first:
+      213: 5837529672900264179
+    second: Cigarette_icon_15
+  - first:
+      213: -5249896004805281422
+    second: Cigarette_icon_16
+  - first:
+      213: -5150936537562387298
+    second: Cigarette_icon_17
+  - first:
+      213: 7221613239695957394
+    second: Cigarette_icon_18
+  - first:
+      213: -3762405984657383250
+    second: Cigarette_icon_19
+  - first:
+      213: -5715856006445747480
+    second: Cigarette_icon_20
+  - first:
+      213: -4669861613564134627
+    second: Cigarette_icon_21
+  - first:
+      213: 6199367536627100347
+    second: Cigarette_icon_22
+  - first:
+      213: -5771646695456057861
+    second: Cigarette_icon_23
+  - first:
+      213: 2715566744985070831
+    second: Cigarette_icon_24
+  - first:
+      213: 4182160609343085263
+    second: Cigarette_icon_25
+  - first:
+      213: 7254580464789096358
+    second: Cigarette_icon_26
+  - first:
+      213: -5159897716699961832
+    second: Cigarette_icon_27
+  - first:
+      213: 7293981789378858518
+    second: Cigarette_icon_28
+  - first:
+      213: 1859137655042256869
+    second: Cigarette_icon_29
+  - first:
+      213: 6728742728521660022
+    second: Cigarette_icon_30
+  - first:
+      213: 1946168227179048246
+    second: Cigarette_icon_31
+  - first:
+      213: -879238767416064647
+    second: Cigarette_icon_32
+  - first:
+      213: 8636862153927548135
+    second: Cigarette_icon_33
+  - first:
+      213: -7968135906179599007
+    second: Cigarette_icon_34
+  - first:
+      213: 5417011010578396556
+    second: Cigarette_icon_35
+  - first:
+      213: -844117795174942620
+    second: Cigarette_icon_36
+  - first:
+      213: -7487995805401157047
+    second: Cigarette_icon_37
+  - first:
+      213: 5443749940156386720
+    second: Cigarette_icon_38
+  - first:
+      213: 4216572396529977988
+    second: Cigarette_icon_39
+  - first:
+      213: -8703237803666852767
+    second: Cigarette_icon_40
+  - first:
+      213: 2950756224427678558
+    second: Cigarette_icon_41
+  - first:
+      213: 1573877847853857307
+    second: Cigarette_icon_42
+  - first:
+      213: 1019172978412609476
+    second: Cigarette_icon_43
+  - first:
+      213: -1238120631586473485
+    second: Cigarette_icon_44
+  - first:
+      213: -5701389204182029535
+    second: Cigarette_icon_45
+  - first:
+      213: -2799906434898003878
+    second: Cigarette_icon_46
+  - first:
+      213: -3600261748832116637
+    second: Cigarette_icon_47
+  - first:
+      213: 8717624798181366343
+    second: Cigarette_icon_48
+  - first:
+      213: 5251614842480691306
+    second: Cigarette_icon_49
+  - first:
+      213: 3084392053522253172
+    second: Cigarette_icon_50
+  - first:
+      213: -8343157946119807517
+    second: Cigarette_icon_51
+  - first:
+      213: -7566518975225814399
+    second: Cigarette_icon_52
+  - first:
+      213: 7662877826253113747
+    second: Cigarette_icon_53
+  - first:
+      213: 6245164364797554723
+    second: Cigarette_icon_54
+  - first:
+      213: -8605734119982145657
+    second: Cigarette_icon_55
+  - first:
+      213: -4854106177089954828
+    second: Cigarette_icon_56
+  - first:
+      213: -7247929508821827893
+    second: Cigarette_icon_57
+  - first:
+      213: -3087211590244919839
+    second: Cigarette_icon_58
+  - first:
+      213: 3875025008797825664
+    second: Cigarette_icon_59
+  - first:
+      213: -2510812615521494702
+    second: Cigarette_icon_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cigarette_icon_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 482
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae77e603a68ebc90800000000000000
+      internalID: -7152131123464143200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 484
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61417fa36e42e830800000000000000
+      internalID: 4098924800912736619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 473
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdcc31a48baa2c70800000000000000
+      internalID: 8947152195854060985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 493
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9dc9f03895fd3080800000000000000
+      internalID: -9205932029269914209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 487
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2578621168e5c0b80800000000000000
+      internalID: -8427256872810674350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 492
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc02f25ba94d499b0800000000000000
+      internalID: -5074197119209889588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 487
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a938df953cfff170800000000000000
+      internalID: 8214561552592288167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 488
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e30c9cc753c3340800000000000000
+      internalID: 4844806109220847228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 464
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721ae9832d1ea2c70800000000000000
+      internalID: 8947211902734213415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_9
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 487
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad46536fa65469530800000000000000
+      internalID: 3861350056216323290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_10
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 494
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b689467a4a5ee9410800000000000000
+      internalID: 1485877422424627307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 464
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb99b43c9c285e10800000000000000
+      internalID: 2186546668499475402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 467
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb3edbc40b15a5a0800000000000000
+      internalID: -6510767978880025621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 476
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d5c0b989bad38a0800000000000000
+      internalID: -6323709629833650943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 483
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b436ebf27042da3f0800000000000000
+      internalID: -888013938237742261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_15
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 465
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0c5071f42130150800000000000000
+      internalID: 5837529672900264179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 470
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279b6d5166f9427b0800000000000000
+      internalID: -5249896004805281422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 463
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c630a82823488b0800000000000000
+      internalID: -5150936537562387298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 464
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dd551daf2583460800000000000000
+      internalID: 7221613239695957394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_19
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 424
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea061b7e0bf39cbc0800000000000000
+      internalID: -3762405984657383250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 300
+        width: 749
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2b48cfe333da0b0800000000000000
+      internalID: -5715856006445747480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_21
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 378
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bf64dba91513fb0800000000000000
+      internalID: -4669861613564134627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_22
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 372
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba2fbccde3980650800000000000000
+      internalID: 6199367536627100347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 310
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5d844f8edf6efa0800000000000000
+      internalID: -5771646695456057861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_24
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 362
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fece2be1191afa520800000000000000
+      internalID: 2715566744985070831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_25
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 368
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca96898ae40a0a30800000000000000
+      internalID: 4182160609343085263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_26
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 366
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a70e3e0f727da460800000000000000
+      internalID: 7254580464789096358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_27
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 344
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816efbe6d5c5468b0800000000000000
+      internalID: -5159897716699961832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_28
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 348
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e4812dacd693560800000000000000
+      internalID: 7293981789378858518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_29
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 340
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efa85dd8dbfcc910800000000000000
+      internalID: 1859137655042256869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_30
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 349
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676b6867cdb416d50800000000000000
+      internalID: 6728742728521660022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 337
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63da82ef0bd220b10800000000000000
+      internalID: 1946168227179048246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_32
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 326
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975c96bdff05cc3f0800000000000000
+      internalID: -879238767416064647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_33
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 331
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecddd27e5c4cd770800000000000000
+      internalID: 8636862153927548135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_34
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 301
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165312e3c9e7b6190800000000000000
+      internalID: -7968135906179599007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 315
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85b7e540d61d2b40800000000000000
+      internalID: 5417011010578396556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 311
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468f20e66571944f0800000000000000
+      internalID: -844117795174942620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_37
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 313
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942f273fc7b451890800000000000000
+      internalID: -7487995805401157047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_38
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 298
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad43157ab51c8b40800000000000000
+      internalID: 5443749940156386720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_39
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 303
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a03e81146448a30800000000000000
+      internalID: 4216572396529977988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_40
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 294
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164bfac4453e73780800000000000000
+      internalID: -8703237803666852767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_41
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 306
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bd8cff62133f820800000000000000
+      internalID: 2950756224427678558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 301
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a7f29509987d510800000000000000
+      internalID: 1573877847853857307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_43
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 302
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfd5fe8c64d42e00800000000000000
+      internalID: 1019172978412609476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_44
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 295
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9b43d68df41dee0800000000000000
+      internalID: -1238120631586473485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_45
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 294
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bab7ed9b890e0b0800000000000000
+      internalID: -5701389204182029535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_46
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 256
+        width: 76
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58f2979eebb429d0800000000000000
+      internalID: -2799906434898003878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_47
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 299
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3606f62b30d490ec0800000000000000
+      internalID: -3600261748832116637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 279
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a9cb4e0993bf870800000000000000
+      internalID: 8717624798181366343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_49
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 286
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a680b3fffdb71e840800000000000000
+      internalID: 5251614842480691306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_50
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 289
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4754b3a1b36fdca20800000000000000
+      internalID: 3084392053522253172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_51
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 277
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed1d8c4d06273c80800000000000000
+      internalID: -8343157946119807517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_52
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 288
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182a967c4135ef690800000000000000
+      internalID: -7566518975225814399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_53
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 289
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399c80788c2085a60800000000000000
+      internalID: 7662877826253113747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_54
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 287
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320bfa7c6e74ba650800000000000000
+      internalID: 6245164364797554723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_55
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 286
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f510bb96a429880800000000000000
+      internalID: -8605734119982145657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_56
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 279
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb168c6620c2acb0800000000000000
+      internalID: -4854106177089954828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_57
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 266
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce7a9d438e2a6b90800000000000000
+      internalID: -7247929508821827893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_58
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 254
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e59bf85a650825d0800000000000000
+      internalID: -3087211590244919839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_59
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 261
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a3629f6bad6c530800000000000000
+      internalID: 3875025008797825664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cigarette_icon_60
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 237
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2599542aa3dc72dd0800000000000000
+      internalID: -2510812615521494702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

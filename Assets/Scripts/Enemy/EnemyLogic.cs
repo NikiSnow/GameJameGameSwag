@@ -61,7 +61,7 @@ public class EnemyLogic : MonoBehaviour
             if (_animator != null)
                 _animator.SetTrigger("Attack");
             
-            //other.GetComponent<Player>().Dead();
+            other.GetComponent<wlking>().Dead();
         }
     }
 

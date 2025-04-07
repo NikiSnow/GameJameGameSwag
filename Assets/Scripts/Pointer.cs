@@ -74,6 +74,7 @@ public class Pointer : MonoBehaviour
         autoMove = true;
         PlayerScr.AbleMove = true;
         Smoked();
+        PlayEnemysAfterSmoking();
     }
     private void Awake()
     {
@@ -190,6 +191,7 @@ public class Pointer : MonoBehaviour
                 GunContr.DisableGun();
                 PuffButton.SetActive(false);
                 _fallRecoverySystem.TriggerFall();
+                StopEnemysOnSmoking();
                 BalancePart.SetActive(false);
             }
             else if (targetAngle <= 10f)
@@ -200,6 +202,7 @@ public class Pointer : MonoBehaviour
                 GunContr.DisableGun();
                 PuffButton.SetActive(false);
                 _fallRecoverySystem.TriggerFall();
+                PlayEnemysAfterSmoking();
                 BalancePart.SetActive(false);
             }
         }
@@ -300,5 +303,24 @@ public class Pointer : MonoBehaviour
     public void SetAutoMoveSpeed(float speed)
     {
         autoMoveSpeed = Mathf.Clamp(speed, 10f, 360f);
+    }
+    public void StopEnemysOnSmoking()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.GetComponent<EnemyLogic>()._isPaused = true;
+        }
+
+    }
+    public void PlayEnemysAfterSmoking()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.GetComponent<EnemyLogic>()._isPaused = false;
+        }
     }
 }

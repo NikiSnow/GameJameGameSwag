@@ -11,6 +11,7 @@ TagManager:
   - GlobalLight
   - SigaCumeraPoint
   - BalancePointer
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,6 @@ public class DeathEffect : MonoBehaviour
     [SerializeField] private float flashDuration = 0.2f;
 
     [Header("References")]
-    [SerializeField] private Image flashImage;
     [SerializeField] private SpriteRenderer enemySprite;
 
     [SerializeField] GameObject FlashPref;
@@ -18,16 +17,7 @@ public class DeathEffect : MonoBehaviour
     Camera MainCum;
     private void Awake()
     {
-        // Находим компонент вспышки, если не назначен
-        //if (flashImage == null)
-        //{
-        //    var flashObj = GameObject.FindWithTag("FlashEffect");
-        //    if (flashObj != null) flashImage = flashObj.GetComponent<Image>();
-        //}
-
-        //originalColor = enemySprite.color;
         MainCum = Camera.main;
-
     }
 
     public void PlayDeathEffect()
@@ -35,29 +25,25 @@ public class DeathEffect : MonoBehaviour
         // Меняем спрайт
         if (deathSprite != null)
         {
-             GetComponent<EnemyLogic>()._player.color = new Color(0,0,0);
+            GetComponent<EnemyLogic>()._player.color = new Color(0, 0, 0);
+            enemySprite.color = new Color(0, 0, 0);
             enemySprite.sprite = deathSprite;
+            Debug.Log("death spri");
         }
-
+        Debug.Log("death cory");
         // Запускаем эффекты
         StartCoroutine(DeathRoutine());
     }
 
     private IEnumerator DeathRoutine()
     {
+        Debug.Log("death inside cor");
         Vector2 SpawnPos = new Vector2 (MainCum.transform.position.x, MainCum.transform.position.y);
         GameObject Flash = Instantiate(FlashPref, SpawnPos, Quaternion.identity);
         // Белая вспышка
         yield return new WaitForSeconds(flashDuration);
         Destroy(Flash);
         GetComponent<EnemyLogic>()._player.color = new Color(1, 1, 1);
-        if (flashImage != null)
-        {
-            flashImage.color = Color.white;
-            flashImage.enabled = true;
-            yield return new WaitForSeconds(flashDuration);
-            flashImage.enabled = false;
-        }
 
         // Исчезновение врага
         float fadeTime = 0.3f;

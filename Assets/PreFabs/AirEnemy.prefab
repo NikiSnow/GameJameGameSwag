@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5435849890868216386}
   - component: {fileID: 3435566737200080810}
   - component: {fileID: 8641072861916238993}
+  - component: {fileID: 60737711187329175}
   m_Layer: 4
   m_Name: AirEnemy
   m_TagString: Untagged
@@ -79,9 +80,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -151,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 1
   _animator: {fileID: 0}
+  deathEffect: {fileID: 60737711187329175}
 --- !u!50 &5435849890868216386
 Rigidbody2D:
   serializedVersion: 4
@@ -192,6 +194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 2
   _isRight: 0
+  _animator: {fileID: 0}
+  _isPaused: 0
+  _player: {fileID: 0}
 --- !u!58 &8641072861916238993
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -228,3 +233,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &60737711187329175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728270341596710877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980b95cfa53dba24b854c19a7fdbf81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathSprite: {fileID: 2917258810573315110, guid: 8708ae72e0762054fb571479a459503b, type: 3}
+  flashDuration: 0.17
+  flashImage: {fileID: 0}
+  enemySprite: {fileID: 6832376571457679266}
+  FlashPref: {fileID: 215751578422149887, guid: 1693d11a4e19f084e8c7b71aa70071cf, type: 3}
