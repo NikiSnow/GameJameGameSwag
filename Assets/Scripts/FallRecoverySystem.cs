@@ -79,7 +79,7 @@ public class FallRecoverySystem : MonoBehaviour
     {
         isFallen = false;
         SetUIActive(false);
-        Player.AbleMove=true;
+        Player.StartedStanding();
         PuffButton.SetActive(true);
         BalanceVisual.SetActive(true);
         Debug.Log("Персонаж поднялся!");

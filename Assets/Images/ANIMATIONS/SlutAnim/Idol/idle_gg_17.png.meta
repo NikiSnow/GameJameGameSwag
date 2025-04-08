@@ -116,8 +116,8 @@ TextureImporter:
       name: idle_gg_17_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 2
+        x: 1125
+        y: 428
         width: 912
         height: 2895
       alignment: 0

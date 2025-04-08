@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueNS : MonoBehaviour
@@ -25,21 +26,25 @@ public class DialogueNS : MonoBehaviour
 
     [SerializeField] private List<DialogData> _dialogs = new List<DialogData>();
 
-    int Counter = 0;
-    int PlaceCounter = 0;
+    [SerializeField] int Counter = 0;
+    [SerializeField] int PlaceCounter = 0;
 
-
+    [SerializeField] bool IsJudi = false;
     [SerializeField] bool IsTutorialEnemy = false;
     [SerializeField] bool IsFinalFather = false;
+
     [SerializeField] private GameObject PlayerBalance;
     [SerializeField] private wlking wlking;
 
     bool ThisDialogueIsActive = false;
 
+    private bool Triggered=false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")&& !Triggered)
         {
+            Triggered = true;
             StartDialogue();
         }
     }
@@ -57,6 +62,18 @@ public class DialogueNS : MonoBehaviour
         PlaceCounter++;
         Debug.Log("Started dialogue on " + _dialogs.Count + " frazes");
     }
+    public void AlternativeStartDialogue()
+    {
+        Debug.Log("Started dialogue on " + _dialogs.Count + " frazes");
+        Debug.Log(Counter);
+        BlackBack.SetActive(true);
+        ClearPlaces();
+        //BlackCover1.SetActive(false);
+        //ImagePlace1.sprite = _dialogs[Counter].Sprite;
+        //TextPlace1.text = _dialogs[Counter].Text;
+        Debug.Log(Counter);
+        ThisDialogueIsActive = true;
+    }
     public void ClearPlaces()
     {
         ImagePlace1.sprite = null;
@@ -67,8 +84,9 @@ public class DialogueNS : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&& ThisDialogueIsActive)
+        if (Input.GetKeyDown(KeyCode.Space)&& ThisDialogueIsActive|| Input.GetMouseButtonDown(0) && ThisDialogueIsActive)
         {
+            Debug.Log("IEnteredUpdQqqq");
             DialogQueue();
         }
     }
@@ -78,6 +96,11 @@ public class DialogueNS : MonoBehaviour
         {
             ClearPlaces();
             BlackBack.SetActive(false);
+            if (IsJudi)
+            {
+                SceneManager.LoadScene("Game");
+                return;
+            }
             if (IsTutorialEnemy)
             {
                 PlayerBalance.SetActive(true);
@@ -86,7 +109,7 @@ public class DialogueNS : MonoBehaviour
             }
             if (IsFinalFather)
             {
-
+                SceneManager.LoadScene("LastScene");
                 return;
             }
             wlking.AbleMove = true;

@@ -11,7 +11,6 @@ public class EnemyLogic : MonoBehaviour
     private Transform _target;
     public bool _isPaused;
     public SpriteRenderer _player;
-
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -23,16 +22,18 @@ public class EnemyLogic : MonoBehaviour
     {
         if (_isPaused)
         {
+            _animator.SetBool("IsPaused",true);
             Stay();
             return;
         }
         
         if (_target == null)
         {
+            _animator.SetBool("IsPaused", true);
             Stay();
             return;
         }
-        
+        _animator.SetBool("IsPaused", false);
         _direction = _target.position - transform.position;
         _direction.Normalize();
         LookToTarget(_direction);
@@ -41,7 +42,15 @@ public class EnemyLogic : MonoBehaviour
     private void FixedUpdate()
     {
         if (_isPaused)
+        {
+            _animator.SetBool("IsPaused", true);
             return;
+        }
+        else
+        {
+            _animator.SetBool("IsPaused", false);
+        }
+
         
         _rigidbody2D.velocity = _rigidbody2D.gravityScale == 0 ? new Vector2(_speed * _direction.x, _speed * _direction.y) : new Vector2(_speed * _direction.x, _rigidbody2D.velocity.y);
     }

@@ -48,6 +48,7 @@ public class Pointer : MonoBehaviour
 
     [SerializeField] private GameObject BalancePart;
     [SerializeField] GunStateController GunContr;
+    [SerializeField] GameObject Cunvas;
 
     public void Puff()
     {
@@ -62,6 +63,7 @@ public class Pointer : MonoBehaviour
         GoSmokePause();
         Debug.Log(CumeraWasPoint.x);
         PlayerScr.AbleMove = false;
+        Cunvas.SetActive(false);
     }
 
     public void GoBackAfterSmoking()
@@ -74,6 +76,7 @@ public class Pointer : MonoBehaviour
         Destroy(SigaPref);
         autoMove = true;
         PlayerScr.AbleMove = true;
+        Cunvas.SetActive(true);
         Smoked();
         PlayEnemysAfterSmoking();
     }
@@ -166,9 +169,6 @@ public class Pointer : MonoBehaviour
             return;
         }
 
-            
-
-
         // Обновляем центр окружности относительно игрока
         centerPosition = playerTransform.position + offsetFromPlayer;
 
@@ -191,22 +191,24 @@ public class Pointer : MonoBehaviour
             targetAngle += autoMoveSpeed * direction * Time.deltaTime;
 
             // Проверка границ и смена направления
-            if (targetAngle >= 180f)
+            if (targetAngle >= 170f)
             {
                 targetAngle = 180f;
                 Debug.Log("u fall to the left");//FALL TO THE LEFT
                 PlayerScr.AbleMove = false;
+                PlayerScr.StartedFalling();
                 GunContr.DisableGun();
                 PuffButton.SetActive(false);
                 _fallRecoverySystem.TriggerFall();
                 StopEnemysOnSmoking();
                 BalancePart.SetActive(false);
             }
-            else if (targetAngle <= 10f)
+            else if (targetAngle <= 8f)
             {
                 targetAngle = 0f;
                 Debug.Log("u fall to the right"); //FALL TO THE RIGHT
                 PlayerScr.AbleMove = false;
+                PlayerScr.StartedFalling();
                 GunContr.DisableGun();
                 PuffButton.SetActive(false);
                 _fallRecoverySystem.TriggerFall();
@@ -215,17 +217,17 @@ public class Pointer : MonoBehaviour
             }
         }
 
-        Debug.Log("PREMoving");
+        //Debug.Log("PREMoving");
         // Плавное перемещение к целевому углу
         if (Mathf.Abs(currentAngle - targetAngle) > 0.01f)
         {
-            Debug.Log("Um Moving");
+            //Debug.Log("Um Moving");
             currentAngle = Mathf.Lerp(currentAngle, targetAngle, rotationSpeed * Time.deltaTime);
             UpdatePosition();
         }
         else
         {
-            Debug.Log("Im in the Angle");
+            //Debug.Log("Im in the Angle");
             currentAngle = targetAngle;
             isManualControl = false; // Сброс флага ручного управления
         }

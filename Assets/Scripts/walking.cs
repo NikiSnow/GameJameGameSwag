@@ -14,6 +14,7 @@ public class wlking : MonoBehaviour
     [SerializeField] private FallRecoverySystem FallRecoverySystem;
     [SerializeField] private GameObject Pointer;
     [SerializeField] private GameObject DeadScreen;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -31,6 +32,32 @@ public class wlking : MonoBehaviour
 
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if (rb.velocityX != 0)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
+    }
+
+    public void StartedFalling()
+    {
+        animator.SetTrigger("StartedFalling");
+    }
+    public void StartedStanding()
+    {
+        animator.SetTrigger("StartedStanding");
+    }
+    public void LockMovement()
+    {
+        AbleMove = false;
+        animator.SetBool("Walking", false);
+    }
+    public void UNLockMovement()
+    {
+        AbleMove = true;
     }
 
     public void ShowDeadScreen()

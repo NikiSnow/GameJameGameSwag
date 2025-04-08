@@ -12,6 +12,8 @@ TagManager:
   - SigaCumeraPoint
   - BalancePointer
   - Enemy
+  - ShootMe
+  - ShootFather
   layers:
   - Default
   - TransparentFX
