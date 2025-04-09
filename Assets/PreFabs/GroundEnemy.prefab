@@ -194,7 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _isRight: 0
   _animator: {fileID: 389999467821475737}
   _isPaused: 0
   _player: {fileID: 0}
@@ -246,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980b95cfa53dba24b854c19a7fdbf81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSprite: {fileID: 2917258810573315110, guid: 8708ae72e0762054fb571479a459503b, type: 3}
+  deathSprite: {fileID: 0}
   flashDuration: 0.17
   enemySprite: {fileID: 790820407835772790}
   FlashPref: {fileID: 215751578422149887, guid: 1693d11a4e19f084e8c7b71aa70071cf, type: 3}
