@@ -23,7 +23,9 @@ public class AsunLoadScene : MonoBehaviour
 
         while (!asyncLoad.isDone)
         {
+            progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
             LoadingPersent = progress;
+            //Debug.Log(LoadingPersent);
             // Обновить текст загрузки или полосу прогресса здесь
             yield return null;
         }
