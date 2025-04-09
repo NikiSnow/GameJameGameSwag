@@ -116,9 +116,9 @@ TextureImporter:
       name: walk_gg_44_0
       rect:
         serializedVersion: 2
-        x: 884
-        y: 425
-        width: 996
+        x: 130
+        y: 16
+        width: 907
         height: 2878
       alignment: 0
       pivot: {x: 0, y: 0}
