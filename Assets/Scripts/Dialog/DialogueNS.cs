@@ -39,6 +39,8 @@ public class DialogueNS : MonoBehaviour
     bool ThisDialogueIsActive = false;
 
     private bool Triggered=false;
+    [SerializeField] private GameObject Loading;
+    [SerializeField] AsunLoadScene AsunLoader;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -98,7 +100,8 @@ public class DialogueNS : MonoBehaviour
             BlackBack.SetActive(false);
             if (IsJudi)
             {
-                SceneManager.LoadScene("Game");
+                Loading.SetActive(true);
+                AsunLoader.ChangeLoadActi();
                 return;
             }
             if (IsTutorialEnemy)
