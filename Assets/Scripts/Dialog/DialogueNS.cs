@@ -98,6 +98,7 @@ public class DialogueNS : MonoBehaviour
         {
             ClearPlaces();
             BlackBack.SetActive(false);
+            Debug.Log("BlackBack.SetActive(false);");
             if (IsJudi)
             {
                 Loading.SetActive(true);
@@ -106,6 +107,7 @@ public class DialogueNS : MonoBehaviour
             }
             if (IsTutorialEnemy)
             {
+                this.enabled = false;
                 PlayerBalance.SetActive(true);
                 wlking.AbleMove = true;
                 this.gameObject.GetComponent<TutorialEnemyt>().ActivateEnemy();

@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
-  _animator: {fileID: 0}
+  _animator: {fileID: 389999467821475737}
   deathEffect: {fileID: 5552028262994851592}
 --- !u!50 &6314679399169957230
 Rigidbody2D:

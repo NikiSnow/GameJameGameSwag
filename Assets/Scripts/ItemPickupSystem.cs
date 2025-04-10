@@ -81,6 +81,12 @@ public class ItemPickupSystem : MonoBehaviour
     }
     public bool RespawnOnLastCheckP()
     {
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1,1,1,1f);
+        GameObject[] objectsWithFlash = GameObject.FindGameObjectsWithTag("FlashAfterDeath");
+        foreach (GameObject obj in objectsWithFlash)
+        {
+            Destroy(obj);
+        }
         if (CheckPointPosition==null)
             return false;
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Enemy");
