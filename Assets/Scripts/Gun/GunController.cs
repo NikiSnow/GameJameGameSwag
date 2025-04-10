@@ -14,6 +14,8 @@ public class GunController : MonoBehaviour
     [SerializeField] private GameObject _firePrefab;
     [SerializeField] private Transform _firePoint;
     [SerializeField] private float _highlightTime = 0.5f;
+    [SerializeField] private AudioSource ASos;
+    [SerializeField] private AudioClip ShootSound;
 
     public int _currentBullet;
     private Camera _mainCamera;
@@ -35,6 +37,7 @@ public class GunController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && _currentBullet != 0)
         {
             Shoot();
+            ASos.PlayOneShot(ShootSound);
         }
     }
 

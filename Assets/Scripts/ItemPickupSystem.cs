@@ -54,6 +54,8 @@ public class ItemPickupSystem : MonoBehaviour
     [SerializeField] private List<GameObject> NonCheckedItems = new List<GameObject>();
     [SerializeField] public List<AdvancedEnemySpawner> NonCheckedEnemyTriggers = new List<AdvancedEnemySpawner>();
 
+    [SerializeField] GunStateController GunState;
+
     private void Start()
     {
         FindAllItemsInScene();
@@ -89,6 +91,7 @@ public class ItemPickupSystem : MonoBehaviour
         }
         if (CheckPointPosition==null)
             return false;
+        GunState.EnableGun();
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject obj in objectsWithTag)
         {

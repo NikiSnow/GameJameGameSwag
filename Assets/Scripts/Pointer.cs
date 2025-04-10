@@ -50,6 +50,8 @@ public class Pointer : MonoBehaviour
     [SerializeField] GunStateController GunContr;
     [SerializeField] GameObject Cunvas;
 
+    [SerializeField] GameObject GunHand;
+
     public void Puff()
     {
         PuffButton.SetActive(false);
@@ -66,10 +68,16 @@ public class Pointer : MonoBehaviour
         Cunvas.SetActive(false);
     }
 
+    private void OnDisable()
+    {
+        GunHand.SetActive(false);
+    }
+
     public void GoBackAfterSmoking()
     {
         Debug.Log(CumeraWasPoint.x);
         PuffButton.SetActive(true);
+        GunHand.SetActive(true);
         GunContr.EnableGun();
         MainCum.GetComponent<CinemachineBrain>().enabled = true;
         MainCum.GetComponent<Transform>().position = new Vector3(CumeraWasPoint.x, CumeraWasPoint.y,-10);
@@ -104,6 +112,7 @@ public class Pointer : MonoBehaviour
     }
     void OnEnable()
     {
+        GunHand.SetActive(true);
         GunContr.EnableGun();
         currentAngle = 90f;
         targetAngle = currentAngle;
@@ -195,6 +204,7 @@ public class Pointer : MonoBehaviour
             {
                 targetAngle = 180f;
                 Debug.Log("u fall to the left");//FALL TO THE LEFT
+                GunHand.SetActive(false);
                 PlayerScr.AbleMove = false;
                 PlayerScr.StartedFalling();
                 GunContr.DisableGun();
@@ -207,6 +217,7 @@ public class Pointer : MonoBehaviour
             {
                 targetAngle = 0f;
                 Debug.Log("u fall to the right"); //FALL TO THE RIGHT
+                GunHand.SetActive(false);
                 PlayerScr.AbleMove = false;
                 PlayerScr.StartedFalling();
                 GunContr.DisableGun();

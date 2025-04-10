@@ -7,11 +7,7 @@ using UnityEngine.UI;
 
 public class SchoolShoting : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private SpriteRenderer Me1;
-    [SerializeField] private SpriteRenderer Me2;
-
-    [SerializeField] private SpriteRenderer Fa1;
-    [SerializeField] private SpriteRenderer Fa2;
+    [SerializeField] Animator animator;
     public void OnPointerClick(PointerEventData eventData)
     {
         SceneManager.LoadScene("titri");
@@ -23,16 +19,7 @@ public class SchoolShoting : MonoBehaviour, IPointerClickHandler, IPointerEnterH
 
         if (hoveredObject == null) return;
 
-        if (hoveredObject.CompareTag("ShootMe"))
-        {
-            if (Me1 != null) Me1.color = new Color(1, 1, 1, 0.3f);
-            if (Me2 != null) Me2.color = new Color(1, 1, 1, 0.3f);
-        }
-        else if (hoveredObject.CompareTag("ShootFather"))
-        {
-            if (Fa1 != null) Fa1.color = new Color(1, 1, 1, 0.3f);
-            if (Fa2 != null) Fa2.color = new Color(1, 1, 1, 0.3f);
-        }
+        animator.SetTrigger("KillMe");
     }
 
 
@@ -40,15 +27,6 @@ public class SchoolShoting : MonoBehaviour, IPointerClickHandler, IPointerEnterH
     {
         Debug.Log("OFF");
         GameObject hoveredObject = eventData.pointerEnter;
-        if (hoveredObject.CompareTag("ShootMe"))
-        {
-            Me1.color = new Color(1, 1, 1, 0.0f);
-            Me2.color = new Color(1, 1, 1, 0.0f);
-        }
-        else if (hoveredObject.CompareTag("ShootFather"))
-        {
-            Fa1.color = new Color(1, 1, 1, 0.0f);
-            Fa2.color = new Color(1, 1, 1, 0.0f);
-        }
+        animator.SetTrigger("NotKillMe");
     }
 }
