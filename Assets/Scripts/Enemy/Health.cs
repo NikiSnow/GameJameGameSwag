@@ -18,22 +18,22 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        // Отключаем физику и коллайдеры
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var colliders = GetComponents<Collider2D>();
         foreach (var col in colliders) col.enabled = false;
 
         var rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.simulated = false;
 
-        // Запускаем эффект смерти
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if (deathEffect != null)
         {
             deathEffect.PlayDeathEffect();
         }
-        else if (_animator != null)
+        
+        if (_animator != null)
         {
-            _animator.SetTrigger("Dead");
-            Destroy(gameObject, _animator.GetCurrentAnimatorStateInfo(0).length);
+            _animator.Play("Dead");
         }
         else
         {

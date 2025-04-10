@@ -22,16 +22,16 @@ public class DeathEffect : MonoBehaviour
 
     public void PlayDeathEffect()
     {
-        // Меняем спрайт
+        GetComponent<EnemyLogic>()._player.color = new Color(0, 0, 0);
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if (deathSprite != null)
         {
-            GetComponent<EnemyLogic>()._player.color = new Color(0, 0, 0);
             enemySprite.color = new Color(0, 0, 0);
             enemySprite.sprite = deathSprite;
             Debug.Log("death spri");
         }
         Debug.Log("death cory");
-        // Запускаем эффекты
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         StartCoroutine(DeathRoutine());
     }
 
@@ -40,12 +40,12 @@ public class DeathEffect : MonoBehaviour
         Debug.Log("death inside cor");
         Vector2 SpawnPos = new Vector2 (MainCum.transform.position.x, MainCum.transform.position.y);
         GameObject Flash = Instantiate(FlashPref, SpawnPos, Quaternion.identity);
-        // Белая вспышка
+        // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         yield return new WaitForSeconds(flashDuration);
         Destroy(Flash);
         GetComponent<EnemyLogic>()._player.color = new Color(1, 1, 1);
 
-        // Исчезновение врага
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         float fadeTime = 0.3f;
         float timer = 0;
 

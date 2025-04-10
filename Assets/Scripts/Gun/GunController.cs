@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    
     [SerializeField] private int _damage = 1;
     [SerializeField] private float _range = 100f;
     [SerializeField] private LayerMask _enemyLayer;
@@ -11,6 +10,10 @@ public class GunController : MonoBehaviour
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private float _lineDuration = 0.1f;
     [SerializeField] private ItemPickupSystem lootSystem;
+    [Header("Highlight")]
+    [SerializeField] private GameObject _firePrefab;
+    [SerializeField] private Transform _firePoint;
+    [SerializeField] private float _highlightTime = 0.5f;
 
     public int _currentBullet;
     private Camera _mainCamera;
@@ -42,6 +45,9 @@ public class GunController : MonoBehaviour
 
     private void Shoot()
     {
+        var highlight = Instantiate(_firePrefab, _firePoint);
+        Destroy(highlight, _highlightTime);
+
         lootSystem.DecAmmoCount();
 
        Vector2 mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);

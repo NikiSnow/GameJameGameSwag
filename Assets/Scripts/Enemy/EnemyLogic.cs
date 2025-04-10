@@ -3,7 +3,6 @@ using UnityEngine;
 public class EnemyLogic : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    [SerializeField] private bool _isRight;
     [SerializeField] private Animator _animator;
     
     private Rigidbody2D _rigidbody2D;
